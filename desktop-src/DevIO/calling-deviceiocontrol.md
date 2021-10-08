@@ -64,7 +64,7 @@ int wmain(int argc, wchar_t *argv[])
   BOOL bResult = FALSE;      // generic results flag
   ULONGLONG DiskSize = 0;    // size of the drive, in bytes
 
-  bResult = GetDriveGeometry (wszDrive, &pdg);
+  bResult = GetDriveGeometry ((LPWSTR)wszDrive, &pdg);
 
   if (bResult) 
   {
